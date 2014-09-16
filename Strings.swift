@@ -4,12 +4,10 @@ extension String {
         return Array(self)[index]
     }
     
-    
     // Allows us to use String[index] notation
     subscript( index: Int ) -> Character {
         return characterAtIndex(index)
     }
-    
     
     // Allows us to use String[0...2] or String[0..2]
     subscript( range: Range<Int> ) -> String {
@@ -20,9 +18,7 @@ extension String {
             return substringWithRange( Range(start:start, end:end) )
     }
     
-    
-    func count() -> Int
-    {
+    func count() -> Int {
         return countElements( self )
     }
     
